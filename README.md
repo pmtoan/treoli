@@ -1,4 +1,5 @@
-## IDO
+## Treoli
 
-Personal todo & notes commandline app. 
-Build for people who love the Terminal.
+#### Bring Trello boards to your terminal
+
+Treoli is a Trello CLI tool.
