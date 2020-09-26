@@ -10,22 +10,11 @@ import (
 func DefaultPrint(data interface{}) {
 	printer := tableprinter.New(os.Stdout)
 	printer.BorderTop, printer.BorderBottom, printer.BorderLeft, printer.BorderRight = true, true, true, true
-	printer.CenterSeparator = "│"
-	printer.ColumnSeparator = "│"
-	printer.RowSeparator = "─"
+	printer.CenterSeparator = "|"
+	printer.ColumnSeparator = "|"
+	printer.RowSeparator = "-"
 	printer.HeaderBgColor = tablewriter.BgBlackColor
 	printer.HeaderFgColor = tablewriter.FgGreenColor
 
 	printer.Print(data)
-}
-
-func PrintListBoards(boards []Board) {
-	printer := tableprinter.New(os.Stdout)
-	printer.BorderTop, printer.BorderBottom, printer.BorderLeft, printer.BorderRight = true, true, true, true
-	printer.CenterSeparator = "│"
-	printer.ColumnSeparator = "│"
-	printer.RowSeparator = "─"
-	printer.HeaderBgColor = tablewriter.BgBlackColor
-	printer.HeaderFgColor = tablewriter.FgGreenColor
-	printer.Print(boards)
 }
