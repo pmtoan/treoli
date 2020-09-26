@@ -7,4 +7,7 @@ type Client interface {
 
 	// Personal Info
 	GetMe() (*lib.Account, error)
+
+	// Board Info
+	GetMyBoards() ([]lib.Board, error)
 }
