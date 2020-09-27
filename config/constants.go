@@ -1,6 +1,9 @@
 package config
 
 const (
+	FolderPath = ".treoli"
+	FileName   = "treoli.yml"
+
 	TrelloAppKeyConfigName = "trello_app_key"
 	TrelloTokenConfigName  = "trello_token"
 
